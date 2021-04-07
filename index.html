@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prixled</title>
+    <script  src="index.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="row">
+        <div class="column col-left" >
+            <div class="feather">
+                <img src="feather.png" alt="" height="40px" width="40px">
+            </div>
+            
+            <br>
+            <div class="template">
+                <img src="Icon-templates.svg" alt="" >
+                <p>templates</p>
+            </div>
+        </div>
+        <div class="column col-right">
+            <div class="heading">
+                <h1 style="display: inline-block;"> < &nbsp;&nbsp; Editing Project heading</h1>
+                <button class="btn" style="display: inline-block;">UPGRADE</button>
+                <img src="Profile-thumbnail.png" alt="" style="display: inline-block;">
+            </div>
+            <div class="functions" >
+                <br>
+                <div class="dropdown style-text" style="display: inline-block;">
+                    <button onclick="myFunction1()" class="dropbtn" >Style Text <img src="Icon-dropdown.svg" alt=""></button>
+                    <div id="myDropdown1" class="dropdown-content">
+                      <a href="">Bold</a>
+                      <a href="">Italic</a>
+                      <a href="">Normal</a>
+                    </div>
+                  </div>
+
+                  <div class="dropdown font-fam" style="display: inline-block; margin-left: 13px;">
+                    <button onclick="myFunction2()" class="dropbtn">Montserrat <img src="Icon-dropdown.svg" alt=""></button>
+                    <div id="myDropdown2" class="dropdown-content">
+                      <a href="">Arial</a>
+                      <a href="">Sans-serif</a>
+                    </div>
+                  </div>
+
+                  <div class="dropdown medium" style="display: inline-block; margin-left: 13px;">
+                    <button  class="dropbtn">Medium <img src="Icon-dropdown.svg" alt=""></button>
+                    <div class="dropdown-content">
+        
+                    </div>
+                  </div>
+
+                  <div class="dropdown font-sizing" style="display: inline-block; margin-left: 13px;">
+                    <button onclick="myFunction3()" class="dropbtn">16 <img src="Icon-dropdown.svg" alt=""></button>
+                    <div id="myDropdown3" class="dropdown-content">
+                      <a href="">14</a>
+                      <a href="">12</a>
+                      <a href="">10</a>
+                      <a href="">8</a>
+                    </div>
+                  </div>
+
+                  <div class="dropdown color" style="display: inline-block; margin-left: 13px;">
+                    <button  class="dropbtn" style="padding:7px; position:relative; top:3px" ><img src="Icon-colour.svg" alt=""> &nbsp;<img src="Icon-dropdown.svg" alt=""></button>
+                    <div class="dropdown-content">
+        
+                    </div>
+                  </div>
+
+                  <div class="dropdown highlight" style="display: inline-block; margin-left: 13px;">
+                    <button  class="dropbtn" style="padding:4px; position:relative; top:8px" ><img src="Icon-highlighter.svg" alt=""></button>
+                    <div class="dropdown-content">
+        
+                    </div>
+                  </div>
+
+                  <div class="dropdown highlight" style="display: inline-block; margin-left: 13px;">
+                    <button  class="dropbtn" style="padding:10px;" ><img src="Icon-quote.svg" alt=""></button>
+                    <div class="dropdown-content">
+        
+                    </div>
+                  </div>
+
+                  
+                  <div class="dropdown " style="display: inline-block; margin-left: 13px;">
+                    <button onclick="myFunction4()" class="dropbtn" style="padding-left:6px; padding-right: 6px;"><img src="Icon-align-left.svg" alt="" height="17px" width="17px">&nbsp;<img src="Icon-dropdown.svg" alt=""></button>
+                    <div id="myDropdown4" class="dropdown-content font-align" style="width: fit-content; border-radius: 5px; margin-top: 8px;">
+                      <a href="" style="border-top-left-radius: 5px; border-bottom-left-radius: 5px;"><img src="Icon-align-center.svg" alt=""></a>
+                      <a href=""><img src="Icon-align-left.svg" alt=""></a>
+                      <a href=""><img src="Icon feather-align-right.svg" alt=""></a>
+                      <a href="" style="border-top-right-radius: 5px; border-bottom-right-radius: 5px;"><img src="Icon-align-justify.svg" alt=""></a>
+                    </div>
+                  </div>
+
+                  <button class="btn-save" style="display: inline-block;">SAVE</button>
+                  <button class="btn-proof" style="display: inline-block;">SEND FOR PROOF <i class="fa fa-angle-down" aria-hidden="true" style="color: #60cfe2;"></i></button>
+                  <button class="btn-publish" style="display: inline-block;">PUBLISH</button>
+            </div>
+
+            <div class="paper" contenteditable="true" >
+                <p></p>
+            </div>
+            
+        </div>
+    </div>
+</body>
+</html>

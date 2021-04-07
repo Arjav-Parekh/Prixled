@@ -1,0 +1,240 @@
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+
+
+}
+
+.col-left{
+    
+    background-color:rgb(235, 235, 235) ;
+    border-right: 3px solid white;
+    padding-bottom: 100%;
+
+}
+
+.col-left .feather{
+    background-color: #60cfe2;
+    padding: 16px 11px 16px 18px;
+}
+
+.col-right{
+
+   display: contents;
+    
+}
+
+
+.column{
+    float: left;
+}
+
+.template{
+    text-align: center;
+    padding: 16px 13px 16px 16px;
+}
+
+.template p{
+    font-size: 10px;
+    margin-top: 0;
+}
+
+.heading{
+    color: white;
+    background-color: #60cfe2;
+    padding:0px 11px 10px 10px;
+    margin:0
+}
+
+.heading h1{
+    font-size: 17px;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+    margin-left: 30px;
+   
+}
+
+.heading img{
+    position: relative;
+    left: 63%;
+    top: 20px;
+}
+
+.btn {
+    -webkit-border-radius: 5;
+    -moz-border-radius: 5;
+    border-radius: 5px;
+    font-family: 'Montserrat';
+    font-weight: 600;
+    color: #ffffff;
+    font-size: 17px;
+    background: #80e1f0;
+    padding: 6px 16px 6px 16px;
+    border: solid #ffffff 2px;
+    text-decoration: none;
+    position: relative;
+    left: 61%;
+    
+  }
+  
+  .btn:hover {
+    background: #65d1e6;
+    text-decoration: none;
+  }
+
+  .functions{
+      background-color:rgb(235, 235, 235) ;
+      padding: 2px 10px 22px 100px;
+  }
+
+
+  /* Dropdown Button */
+.dropbtn {
+    background-color: white;
+    font-family: 'Montserrat';
+    font-weight: 600;
+    color: #150e56;
+    padding: 10px 16px 10px 16px;
+    font-size: 15px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+  }
+
+  .style-text img{
+      margin-left: 115px;
+  }
+  
+  .font-fam img{
+    margin-left:45px;
+}
+
+.medium img{
+    margin-left:40px;
+}
+
+  .dropbtn:hover, .dropbtn:focus {
+    background-color: #bbbaba;
+  }
+  
+
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+
+  
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    width: 100%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    border:1px solid #150e56;
+    z-index: 1;
+  }
+  
+
+  .dropdown-content a {
+    background-color: white;
+    font-family: 'Montserrat';
+    font-weight: 600;
+    color: #150e56;
+    font-size: 15px;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+
+
+  .dropdown-content a:hover {background-color: #ddd}
+  
+  .show {display:block;}
+  .show2 {display:flex;  }
+
+
+  .btn-save {
+    -webkit-border-radius: 5;
+    -moz-border-radius: 5;
+    border-radius: 3px;
+    font-family: 'Montserrat';
+    font-weight: 600;
+    color: #150e5663;
+    font-size: 14px;
+    background: transparent;
+    padding: 6px 16px 6px 16px;
+    border: solid #150e5663 2px;
+    text-decoration: none;
+    position: relative;
+    margin-left: 8%;
+    
+  }
+  
+  .btn-save:hover {
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  }
+
+  .btn-proof {
+    -webkit-border-radius: 5;
+    -moz-border-radius: 5;
+    border-radius: 3px;
+    font-family: 'Montserrat';
+    font-weight: 600;
+    color: #60cfe2;
+    font-size: 14px;
+    background: transparent;
+    padding: 6px 13px 6px 12px;
+    border: solid #60cfe2 2px;
+    text-decoration: none;
+    position: relative;
+    
+    
+  }
+  
+  .btn-proof:hover {
+    background-color: #60cfe2;
+    color: white;
+  }
+
+  .btn-publish {
+    -webkit-border-radius: 5;
+    -moz-border-radius: 5;
+    border-radius: 3px;
+    font-family: 'Montserrat';
+    font-weight: 600;
+    color: white;
+    font-size: 14px;
+    background: rgb(0,173,184);
+    background: linear-gradient(90deg, rgba(0,173,184,1) 0%, rgba(0,107,181,1) 100%);
+    padding: 8px 16px 8px 16px;
+    text-decoration: none;
+    position: relative;
+    border:none
+    
+  }
+  
+  .btn-publish:hover {
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  }
+
+  .paper{
+      background-color: white;
+      width: 70%;
+    margin-top: 6%;
+      box-shadow:  -0.1em 0 .4em 8px rgba(0,0,0,0.2); 
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 5% 4% 80% 5%;
+      border: none;
+
+  }
+
+
+  [contenteditable] {
+    outline: 0px solid transparent;
+  }
