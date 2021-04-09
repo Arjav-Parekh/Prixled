@@ -79,3 +79,34 @@ function myFunction4() {
       }
     }
   }
+  
+
+  function boldFunction() {
+
+    document.getElementById("bold").addEventListener("click", buttonFunction);
+  }
+
+  function selectFunction(){
+
+    document.execCommand("bold");
+  }
+
+
+
+  function italicFunction(){
+    if(document.getElementById("paper").style.fontStyle == "italic"){
+      document.getElementById("paper").style.fontStyle = "normal";
+    }
+    else{
+      document.getElementById("paper").style.fontStyle = "italic";
+    }
+  }
+
+  function buttonFunction(){
+    if(document.getElementById('bold').style.backgroundColor!="gray"){
+      document.getElementById('bold').style.backgroundColor="gray";
+    }else{
+      document.getElementById('bold').style.backgroundColor="white";
+    }
+  }
+

@@ -35,9 +35,9 @@
                 <div class="dropdown style-text" style="display: inline-block;">
                     <button onclick="myFunction1()" class="dropbtn" >Style Text <img src="Icon-dropdown.svg" alt=""></button>
                     <div id="myDropdown1" class="dropdown-content">
-                      <a href="">Bold</a>
-                      <a href="">Italic</a>
-                      <a href="">Normal</a>
+                      <a onclick="boldFunction()" id="bold">Bold</a>
+                      <a onclick="italicFunction()">Italic</a>
+        
                     </div>
                   </div>
 
@@ -103,8 +103,8 @@
                   <button class="btn-publish" style="display: inline-block;">PUBLISH</button>
             </div>
 
-            <div class="paper" contenteditable="true" >
-                <p></p>
+            <div class="paper" id="paper" contenteditable="true" >
+                <p ></p>
             </div>
             
         </div>
