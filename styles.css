@@ -62,8 +62,7 @@ body{
 }
 
 .btn {
-    -webkit-border-radius: 5;
-    -moz-border-radius: 5;
+
     border-radius: 5px;
     font-family: 'Montserrat';
     font-weight: 600;
@@ -89,7 +88,7 @@ body{
   }
 
 
-  /* Dropdown Button */
+
 .dropbtn {
     background-color: white;
     font-family: 'Montserrat';
@@ -138,11 +137,15 @@ body{
   }
   
 
-  .dropdown-content a {
+
+  .dropdown-content button {
     background-color: white;
     font-family: 'Montserrat';
     font-weight: 600;
     color: #150e56;
+    width: 100%;
+    text-align: left;
+    border: none;
     font-size: 15px;
     padding: 12px 16px;
     text-decoration: none;
@@ -151,15 +154,14 @@ body{
 
 
 
-  .dropdown-content a:hover {background-color: #ddd}
+  .dropdown-content button:hover {background-color: #ddd}
   
   .show {display:block;}
   .show2 {display:flex;  }
 
 
   .btn-save {
-    -webkit-border-radius: 5;
-    -moz-border-radius: 5;
+
     border-radius: 3px;
     font-family: 'Montserrat';
     font-weight: 600;
@@ -179,8 +181,7 @@ body{
   }
 
   .btn-proof {
-    -webkit-border-radius: 5;
-    -moz-border-radius: 5;
+
     border-radius: 3px;
     font-family: 'Montserrat';
     font-weight: 600;
@@ -201,8 +202,7 @@ body{
   }
 
   .btn-publish {
-    -webkit-border-radius: 5;
-    -moz-border-radius: 5;
+
     border-radius: 3px;
     font-family: 'Montserrat';
     font-weight: 600;
@@ -234,7 +234,18 @@ body{
 
   }
 
-
+.low-width{
+  display: none;
+}
   [contenteditable] {
     outline: 0px solid transparent;
+  }
+
+  @media(max-width:812px){
+    .row{
+      display: none;
+    }
+    .low-width{
+      display: block;
+    }
   }

@@ -1,30 +1,14 @@
-/* When the user clicks on the button, 
-toggle between hiding and showing the dropdown content */
-function myFunction1() {
-    document.getElementById("myDropdown1").classList.toggle("show");
-  }
-  
-  // Close the dropdown if the user clicks outside of it
-  window.onclick = function(event) {
-    if (!event.target.matches('.dropbtn')) {
-      var dropdowns = document.getElementsByClassName("dropdown-content");
-      var i;
-      for (i = 0; i < dropdowns.length; i++) {
-        var openDropdown = dropdowns[i];
-        if (openDropdown.classList.contains('show')) {
-          openDropdown.classList.remove('show');
-        }
-      }
-    }
-  }
+//You will have to select the text always to perform the required function
 
-  /* When the user clicks on the button, 
-toggle between hiding and showing the dropdown content */
-function myFunction2() {
-    document.getElementById("myDropdown2").classList.toggle("show");
+
+function dropFunction(dropID) {
+  if(dropID=="text-size"){
+    dropID=3;
+  }
+    document.getElementById("dropDown"+dropID).classList.toggle("show");
   }
   
-  // Close the dropdown if the user clicks outside of it
+
   window.onclick = function(event) {
     if (!event.target.matches('.dropbtn')) {
       var dropdowns = document.getElementsByClassName("dropdown-content");
@@ -39,34 +23,11 @@ function myFunction2() {
   }
 
 
-    /* When the user clicks on the button, 
-toggle between hiding and showing the dropdown content */
-function myFunction3() {
-    document.getElementById("myDropdown3").classList.toggle("show");
-  }
-  
-  // Close the dropdown if the user clicks outside of it
-  window.onclick = function(event) {
-    if (!event.target.matches('.dropbtn')) {
-      var dropdowns = document.getElementsByClassName("dropdown-content");
-      var i;
-      for (i = 0; i < dropdowns.length; i++) {
-        var openDropdown = dropdowns[i];
-        if (openDropdown.classList.contains('show')) {
-          openDropdown.classList.remove('show');
-        }
-      }
-    }
+
+function dropFunction4() {
+    document.getElementById("dropDown4").classList.toggle("show2");
   }
 
-
-    /* When the user clicks on the button, 
-toggle between hiding and showing the dropdown content */
-function myFunction4() {
-    document.getElementById("myDropdown4").classList.toggle("show2");
-  }
-  
-  // Close the dropdown if the user clicks outside of it
   window.onclick = function(event) {
     if (!event.target.matches('.dropbtn')) {
       var dropdowns = document.getElementsByClassName("dropdown-content");
@@ -79,34 +40,189 @@ function myFunction4() {
       }
     }
   }
-  
 
-  function boldFunction() {
 
-    document.getElementById("bold").addEventListener("click", buttonFunction);
-  }
+  function boldSelection() {
+    // if(document.getElementById('bold').style.backgroundColor!="gray"){
+    //   document.getElementById('bold').style.backgroundColor="gray";
+    // }else{
+    //   document.getElementById('bold').style.backgroundColor="white";
+    // }
+    var span = document.createElement("span");
+    span.style.fontWeight = "bold";
+    span.style.color = "black";
 
-  function selectFunction(){
+    if (window.getSelection) {
+        var sel = window.getSelection();
+        if (sel.rangeCount) {
+            var range = sel.getRangeAt(0).cloneRange();
+            range.surroundContents(span);
+            sel.removeAllRanges();
+            sel.addRange(range);
+        }
+    }
 
-    document.execCommand("bold");
-  }
+
+}
 
 
 
   function italicFunction(){
-    if(document.getElementById("paper").style.fontStyle == "italic"){
-      document.getElementById("paper").style.fontStyle = "normal";
+    // if(document.getElementById('italic').style.backgroundColor!="gray"){
+    //   document.getElementById('italic').style.backgroundColor="gray";
+    // }else{
+    //   document.getElementById('italic').style.backgroundColor="white";
+    // }
+
+      
+
+    //   document.getElementById('normal').style.backgroundColor="white";
+
+    var span = document.createElement("span");
+    span.style.color = "black";
+    span.style.fontStyle="italic";
+    if (window.getSelection) {
+        var sel = window.getSelection();
+        if (sel.rangeCount) {
+            var range = sel.getRangeAt(0).cloneRange();
+            range.surroundContents(span);
+            sel.removeAllRanges();
+            sel.addRange(range);
+        }
     }
-    else{
-      document.getElementById("paper").style.fontStyle = "italic";
-    }
+
+
   }
 
-  function buttonFunction(){
-    if(document.getElementById('bold').style.backgroundColor!="gray"){
-      document.getElementById('bold').style.backgroundColor="gray";
-    }else{
-      document.getElementById('bold').style.backgroundColor="white";
-    }
+
+
+function normalFunction(){
+  // if(document.getElementById('normal').style.backgroundColor!="gray"){
+  //   document.getElementById('normal').style.backgroundColor="gray";
+    
+  // }else{
+  //   document.getElementById('normal').style.backgroundColor="white";
+  // }
+  var span = document.createElement("span");
+  span.style.fontWeight = "400";
+  span.style.color = "black";
+  span.style.fontStyle="normal"
+  
+  if (window.getSelection) {
+      var sel = window.getSelection();
+      if (sel.rangeCount) {
+          var range = sel.getRangeAt(0).cloneRange();
+          range.surroundContents(span);
+          sel.removeAllRanges();
+          sel.addRange(range);
+      }
   }
 
+}
+
+
+function fontFunction(fontfam){
+
+  var span = document.createElement("span");
+  span.style.fontFamily=fontfam;
+  
+  if (window.getSelection) {
+      var sel = window.getSelection();
+      if (sel.rangeCount) {
+          var range = sel.getRangeAt(0).cloneRange();
+          range.surroundContents(span);
+          sel.removeAllRanges();
+          sel.addRange(range);
+      }
+  }
+
+}
+
+// Could not recognize significance of Medium
+
+function sizeFunction(fontsize){
+  document.getElementById('text-size').innerText=fontsize;
+  var span = document.createElement("span");
+  var sizingMultiple = parseFloat(fontsize)*2;
+  span.style.fontSize=sizingMultiple.toString()+"px";
+  
+  if (window.getSelection) {
+      var sel = window.getSelection();
+      if (sel.rangeCount) {
+          var range = sel.getRangeAt(0).cloneRange();
+          range.surroundContents(span);
+          sel.removeAllRanges();
+          sel.addRange(range);
+      }
+  }
+
+}
+
+
+
+function colorFunction(fontcol){
+
+  var span = document.createElement("span");
+
+  span.style.color=fontcol;
+  
+  if (window.getSelection) {
+      var sel = window.getSelection();
+      if (sel.rangeCount) {
+          var range = sel.getRangeAt(0).cloneRange();
+          range.surroundContents(span);
+          sel.removeAllRanges();
+          sel.addRange(range);
+      }
+  }
+
+}
+
+count=0
+function highFunction(){
+
+  var span = document.createElement("span");
+  if(count%2==0){
+    span.style.backgroundColor="yellow";
+    count++
+  }else{
+    span.style.backgroundColor="white";
+    count++
+  }
+  
+  
+  if (window.getSelection) {
+      var sel = window.getSelection();
+      if (sel.rangeCount) {
+          var range = sel.getRangeAt(0).cloneRange();
+          range.surroundContents(span);
+          sel.removeAllRanges();
+          sel.addRange(range);
+          
+      }
+  }
+
+}
+
+
+// Didnt get the next function
+
+
+function alignFunction(align){
+
+  var span = document.createElement("span");
+  span.style.display='block';
+  span.style.width="1000px";
+  span.style.textAlign=align;
+  
+  if (window.getSelection) {
+      var sel = window.getSelection();
+      if (sel.rangeCount) {
+          var range = sel.getRangeAt(0).cloneRange();
+          range.surroundContents(span);
+          sel.removeAllRanges();
+          sel.addRange(range);
+      }
+  }
+
+}
